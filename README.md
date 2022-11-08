@@ -27,11 +27,28 @@ Below details the workflow that developers should adhere to during development. 
 ## Requirements Gathering & Analysis
 - Our requriements illication method of choice will be document review
 - Requirements Analysis???
-## Backlog Issues Creation 
-- Creating User stories
-![image](https://user-images.githubusercontent.com/73124349/200510538-ce785acb-1849-4285-9f3e-aa576b8d341d.png)
+## Backlog Issues & Test Cases
+- Creating Issues
+  1. Create an issue with a meaningful name in product backlog
+  2. Under the issue description
+     1. Add in the Requirements section
+     2. Add in the Pull Requests section
 - Creating Test Cases
+    1. Test cases will be created for each user story
+        - These tests should be integration or system tests (strictly not unit tests)
+    2. Test cases should follow the below format
+        | ID | Name | Description | Value/Steps | Result |
+        |---|---|---|---|---|
+        |1|Navigate to contact us|When an existing user .... |1. 2. 3.|url="..."|
 ## Development & Git
+- Starting work on issues
+     1. During Sprint Planning
+        1. Assign the issue to a repository
+        2. Estimate the issue size
+        3. Add a priority
+     2. During Development
+        1. Create a branch from the issue and use it for development
+        2. In the event a new branch is needed, use the same issue number
 - TDD
 - Branching Issues
 - Merge Strategy
@@ -55,5 +72,4 @@ Below details the workflow that developers should adhere to during development. 
 - Adding new tickets mid sprint
 ## Scrum & Processes
 - Working as a team to accomplish sprint goals
-
-
+![image](https://user-images.githubusercontent.com/73124349/200510538-ce785acb-1849-4285-9f3e-aa576b8d341d.png)
