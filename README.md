@@ -84,8 +84,9 @@ Below details the workflow that developers should adhere to during development. 
 # Misc
 ## Git Strategy
 - Merging VS Rebasing
+    - The team will be adopting a merging strategy as detailed in the steps above
 ## Deployment Strategy
-- NIL for now
+- Localhost is best
 ## CI/CD
 - Pipeline stuff
 - Unit tests in pipeline
@@ -94,6 +95,12 @@ Below details the workflow that developers should adhere to during development. 
 - Adding new tickets mid sprint
 ## Scrum & Processes
 - Working as a team to accomplish sprint goals
-- Scrum processes
+- Scrum/Team processes
+    - Sprint Planning
+    - Sprint Review
+    - Sprint Retrospective
+    - Technical Backlog Refinement
+    - Architecture Design Sessions
+    - Celebrations
 - Scrum board
 ![image](https://user-images.githubusercontent.com/73124349/200510538-ce785acb-1849-4285-9f3e-aa576b8d341d.png)
