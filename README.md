@@ -24,10 +24,12 @@ Balqis | Developer | Development and more development
 
 # Development & Scrum Workflow
 Below details the workflow that developers should adhere to during development. It is ordered sequentially.
-## Requirements Gathering 
-- Requirements illicitation
+## Requirements Gathering & Analysis
+- Our requriements illication method of choice will be document review
+- Requirements Analysis???
 ## Backlog Issues Creation 
 - Creating User stories
+![image](https://user-images.githubusercontent.com/73124349/200510538-ce785acb-1849-4285-9f3e-aa576b8d341d.png)
 - Creating Test Cases
 ## Development & Git
 - TDD
@@ -53,8 +55,5 @@ Below details the workflow that developers should adhere to during development. 
 - Adding new tickets mid sprint
 ## Scrum & Processes
 - Working as a team to accomplish sprint goals
-
-
-
 
 
