@@ -2,10 +2,11 @@
 This is the profile readme of DevOps Oct2022 Team 1. It details the roles of the team members as well as the scrum and development processes that we adhere to.
 
 ## Team Members & Roles
+All team members will have to partake in development work
 | Name | Role | Description |
 |---|---|---|
 Dong En | Scrum Master | Facilitate scrum processes and enforces scrum practises
-Wen Kang | Lead Developer | Facilitate scrum processes and enforces scrum practises
+Wen Kang | Lead Developer | Design software architecture and technical requirements
 Vernon | Quality Assurance | Test Cases for component and above level tests
 Lincoln | Quality Assurance | Test Cases for component and above level tests
 Balqis | Developer | Development and more development
@@ -26,7 +27,8 @@ Balqis | Developer | Development and more development
 Below details the workflow that developers should adhere to during development. It is ordered sequentially.
 ## Requirements Gathering & Analysis
 - Our requriements illication method of choice will be document review
-- **Requirements Analysis**
+    - After the document review, the scrum master and tech lead will draft out a high level overview of the features required and populate the product backlog with user stories that correspond to the said features
+    - The rest of the team will then review and discuss the user stories to polish them
 ## Backlog Issues & Test Cases
 - Creating Issues
   1. Create an issue with a meaningful name in product backlog
@@ -35,7 +37,8 @@ Below details the workflow that developers should adhere to during development. 
      2. Add in the Pull Requests section
 - Creating Test Cases
     1. Test cases will be created for each user story
-        - These tests should be integration or system tests (strictly not unit tests)
+        - These tests should be integration or system tests (not unit tests)
+        - These test cases should be done in a word document in teams
     2. Test cases should follow the below format
         | ID | Name | Description | Value/Steps | Result |
         |---|---|---|---|---|
@@ -46,33 +49,35 @@ Below details the workflow that developers should adhere to during development. 
     2. Estimate the issue size
     3. Add a priority
 - Starting Development & Branching Issues
-    1. Create a branch from the issue and use it for development (25-develop locking mechanism)
+    1. Create a branch from the issue and use it for development (e.g. 25-develop locking mechanism)
     2. Assign the issue to yourself and move it to "In Progress"
-    3. In the event a new branch is needed, use the same issue number (25-new locking mechanism)
-    4. Under the description section of each issue, add comments to update the progress of your issue. Developers should only comment important information that is relevant to share to the team. (Subjective but just don't put too much insignificant stuff)
+    3. In the event a new branch is needed, use the same issue number (e.g. 25-new locking mechanism)
+    4. Under the description section of each issue, add comments to update the progress of your issue. Developers should only comment important information that is relevant to share to the team. (Subjective, don't put insignificant stuff)
 - TDD
     1. Development will be done using a TDD approach (Unit Tests)
     2. Integration and System tests will be introduced after the completion of the relevant features
 - Merge Strategy
     1. Development of enhancements or bugs will be done in their respective branches and merged back into main when completed. 
-    2. **Merging of working code is to be done at least once a day, this is done to encourage everyone to be working on the same set of code and resolve all issues during development**
+    2. ~~Merging of working code is to be done at least once a day, this is done to encourage everyone to be working on the same set of code and resolve all issues during development~~
 ## Pull Requests
 - Creating Pull Requests
     1. When code is ready to be merged back into main, developers are to make a pull request
     2. Pull Requests should contain a meaningful description to summarise the changes
     3. Developers are to ping the relevant reviewers in telegram 
-    4. and add the pull reuquest to the relevant issue
+    4. If the issue is not linked to the pull request, add the link in the description
 - Reviewing Pull Requests
-    1. When reviewing pull requests, developers should test the code that has been changed locally
+    1. When reviewing pull requests, developers should test the code that has been changed on their own device
     2. To approve the pull request, approve the code or add a LGTM and merge it
 ## Completing Issues
-- Updating Issues
+- Updating Issues & Moving To Review
     1. Ensure that all code is merged into main and working
     2. Ensure that the issue has been updated 
         - Requirements, Pull Requests, Comments/Updates
     3. Move the issue to "In Review" (Max 2 days before Sprint Review)
 - Reviewing Issues
-    1. Review the requriements of the issue and verify that it is working in main
+    1. Review the requriements of the issue
+    2. Verify that the code has been merged into main, deployed and working
+    2. Check that the pipeline is passing
     2. Review the code if necessary 
     3. If the issue is done
         1. Add a LGTM
@@ -88,19 +93,39 @@ Below details the workflow that developers should adhere to during development. 
 ## Deployment Strategy
 - Localhost is best
 ## CI/CD
-- Pipeline stuff
-- Unit tests in pipeline
-- Integration and system tests in pipeline
+- CI
+    - On push onto development branches
+        - Build test, Unit Test 
+    - On push/pull request onto main
+        - Build test, Unit Test, Integration Test, System Test
+- CD
+    - Localhost is best
 ## Adjusting to Changing Requirements
-- Adding new tickets mid sprint
+- If requirements are changed and there is a need to reprioritize the issues, the scrum master and tech lead will review the process of the ongoing sprint and decide to either finish the sprint or introduce new issues.
+- The scrum master and tech lead will brief the team on the updated requirements and how/when the team will be taking them on 
 ## Scrum & Processes
 - Working as a team to accomplish sprint goals
+    - As a scrum team, the goal of the sprint is to finish the issues in the sprint backlog so members should be helping each other out instead of taking on tasks that are out of scope
+    - It is encouraged to seek help from each other when needed not only to improve efficiency but also understanding of the different aspects of the project
 - Scrum/Team processes
-    - Sprint Planning
-    - Sprint Review
-    - Sprint Retrospective
+    - Sprint Planning (Date tbd)
+        - Team to discuss resources available, sprint goals, sprint backlog issues 
+    - Sprint Review (Date tbd)
+        - Team to walkthrough their issue, demo their code and address the Product Owner
+        - Code walkthrough can be done after PO leaves
+        - Code should be merged into main and deployed in the live environment
+    - Sprint Retrospective (Date tbd)
+        - Retrotools
+        - Actionable points should be documented and worked on in next sprint
     - Technical Backlog Refinement
+        - For scrum master and tech lead to discuss the  technical requirements of the project and populate issue requriements
+        - Memebers will be asked to join when necessary
     - Architecture Design Sessions
+        - For scrum master and tech lead to discuss the architecture and design of the project
+        - Memebers will be asked to join when necessary
     - Celebrations
+        - It is important to celebrate
+        - Hopefully we have time to organise a lunch
 - Scrum board
-![image](https://user-images.githubusercontent.com/73124349/200510538-ce785acb-1849-4285-9f3e-aa576b8d341d.png)
+    - Done using Github Projects
+    - 
