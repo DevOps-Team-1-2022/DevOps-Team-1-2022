@@ -1,6 +1,25 @@
 # Introduction
 This is the profile readme of DevOps Oct2022 Team 1. It details the roles of the team members as well as the scrum and development processes that we adhere to.
 
+- [Introduction](#introduction)
+  * [Team Members & Roles](#team-members---roles)
+  * [Software & Tools](#software---tools)
+  * [Tech Stack & Dependencies](#tech-stack---dependencies)
+- [Development & Scrum Workflow](#development---scrum-workflow)
+  * [Requirements Gathering & Analysis](#requirements-gathering---analysis)
+  * [Backlog Issues & Test Cases](#backlog-issues---test-cases)
+  * [Development & Git](#development---git)
+  * [Pull Requests](#pull-requests)
+  * [Completing Issues](#completing-issues)
+- [Automation and Communication](#automation-and-communication)
+  * [Deployment Strategy](#deployment-strategy)
+  * [Delivery Strategy](#delivery-strategy)
+  * [Communications Strategy](#communications-strategy)
+- [Misc](#misc)
+  * [Git Strategy](#git-strategy)
+  * [CI/CD](#ci-cd)
+  * [Adjusting to Changing Requirements](#adjusting-to-changing-requirements)
+  * [Scrum & Processes](#scrum---processes)
 ## Team Members & Roles
 All team members will have to partake in development work
 | Name | Role | Description |
@@ -86,12 +105,29 @@ Below details the workflow that developers should adhere to during development. 
     4. If the issue requires changes
         1. Add a comment detailing the change and move it back to "In Progress"
 
+# Automation and Communication
+Below details our CI/CD strategy as well as our communications strategy.
+
+## Deployment Strategy
+- Automated deployment will be done for selected work only
+- Tagging and Releases, Automated deployment on commit into main
+
+## Delivery Strategy
+- Main will be delivered to relevant stakeholders on a daily basis
+- Deployment into prod will be decided by stakeholders
+
+## Communications Strategy
+- Project information will be documented in github projects 
+- Documentation will be done in teams files
+- Teams will be used for video conferencing
+- Telegram will be used for quick texting
+- Emails will be used to communicate with relevant stakeholders
+
 # Misc
 ## Git Strategy
 - Merging VS Rebasing
     - The team will be adopting a merging strategy as detailed in the steps above
-## Deployment Strategy
-- Localhost is best
+
 ## CI/CD
 - CI
     - On push onto development branches
