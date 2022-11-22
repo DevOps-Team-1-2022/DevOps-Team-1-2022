@@ -108,13 +108,15 @@ Below details the workflow that developers should adhere to during development. 
 # Automation and Communication
 Below details our CI/CD strategy as well as our communications strategy.
 
-## Deployment Strategy
-- Automated deployment will be done for selected work only
-- Tagging and Releases, Automated deployment on commit into main
-
 ## Delivery Strategy
 - Main will be delivered to relevant stakeholders on a weekly basis
-- Deployment into prod will be decided by stakeholders
+- On acceptance of code, main will be merged into prod
+
+## Deployment Strategy
+- Automated deployment will be done for prod on commit/merge
+- Deployment will be done in the form of github releases
+
+
 
 ## Communications Strategy
 - Project information will be documented in github projects 
