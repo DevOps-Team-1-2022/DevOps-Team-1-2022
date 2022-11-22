@@ -113,7 +113,7 @@ Below details our CI/CD strategy as well as our communications strategy.
 - Tagging and Releases, Automated deployment on commit into main
 
 ## Delivery Strategy
-- Main will be delivered to relevant stakeholders on a daily basis
+- Main will be delivered to relevant stakeholders on a weekly basis
 - Deployment into prod will be decided by stakeholders
 
 ## Communications Strategy
@@ -128,14 +128,12 @@ Below details our CI/CD strategy as well as our communications strategy.
 - Merging VS Rebasing
     - The team will be adopting a merging strategy as detailed in the steps above
 
-## CI/CD
+## CI
 - CI
     - On push onto development branches
         - Build test, Unit Test 
     - On push/pull request onto main
         - Build test, Unit Test, Integration Test, System Test
-- CD
-    - Localhost is best
 ## Adjusting to Changing Requirements
 - If requirements are changed and there is a need to reprioritize the issues, the scrum master and tech lead will review the process of the ongoing sprint and decide to either finish the sprint or introduce new issues.
 - The scrum master and tech lead will brief the team on the updated requirements and how/when the team will be taking them on 
@@ -164,4 +162,3 @@ Below details our CI/CD strategy as well as our communications strategy.
         - Hopefully we have time to organise a lunch
 - Scrum board
     - Done using Github Projects
-    - 
