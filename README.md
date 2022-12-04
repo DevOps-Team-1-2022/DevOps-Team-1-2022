@@ -20,6 +20,7 @@ This is the profile readme of DevOps Oct2022 Team 1. It details the roles of the
   * [CI/CD](#ci-cd)
   * [Adjusting to Changing Requirements](#adjusting-to-changing-requirements)
   * [Scrum & Processes](#scrum---processes)
+- [Pipelines](#pipelines)
 ## Team Members & Roles
 All team members will have to partake in development work
 | Name | Role | Description |
@@ -164,3 +165,38 @@ Below details our CI/CD strategy as well as our communications strategy.
         - Hopefully we have time to organise a lunch
 - Scrum board
     - Done using Github Projects
+# Pipelines
+### CI Push WB
+- On Push
+    - To any Working Branch
+- Run build tests
+- Run unit tests 
+### CI PR Main
+- On PR
+    -To Main
+- Run build tests
+- Run unit tests & integration tests
+- Create issue if fail
+### CI Push Main
+- On Push
+    - To Main
+- Run build tests
+- Run unit tests & integration tests
+- Generate report
+- Upload report 
+### CDelivery PR Prod
+- On PR
+    - To Prod
+- Run build tests
+- Run unit tests & Integration tests
+- Generate report
+- Zip report and source code
+- Notify stakeholder with message and artefacts via telegram
+### CDeploy Push Prod
+- On Push
+    - To Prod
+- Run build tests
+- Run unit tests & Integration tests
+- Generate Report
+- Deploy new code
+- Notify stakeholder with message and artefacts via telegram
