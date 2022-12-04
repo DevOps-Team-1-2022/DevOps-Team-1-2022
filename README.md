@@ -190,6 +190,7 @@ Below details our CI/CD strategy as well as our communications strategy.
 - Run build tests
 - Run unit tests & Integration tests
 - Generate report
+- Label size of PR
 - Zip report and source code
 - Notify stakeholder with message and artefacts via telegram
 ### CDeploy Push Prod
